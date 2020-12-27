@@ -18,7 +18,7 @@ function ItemCart({ totalQty, totalPrice, discount }) {
         </div>
         <div className="content">
           <p>Discount :</p>
-          <h5>{discount}</h5>
+          <h5>{-discount}</h5>
         </div>
         <div className="content" style={{ backgroundColor: "gainsboro" }}>
           <p>Order Total :</p>
