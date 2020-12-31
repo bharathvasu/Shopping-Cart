@@ -25,15 +25,15 @@ function ItemTable({
         <Table size="small" aria-label="a dense table">
           <TableHead>
             <TableRow>
-              <TableCell>Items({totalQty})</TableCell>
-              <TableCell align="center">Name</TableCell>
-              <TableCell align="center">Price</TableCell>
-              <TableCell align="center">Discount</TableCell>
-              <TableCell align="center">Type</TableCell>
-              <TableCell align="center">Add</TableCell>
-              <TableCell align="center">Quantity</TableCell>
-              <TableCell align="center">Reduce</TableCell>
-              <TableCell align="center">Delete</TableCell>
+              <TableCell><b>Items({totalQty})</b></TableCell>
+              <TableCell align="center"><b>Name</b></TableCell>
+              <TableCell align="center"><b>Price</b></TableCell>
+              <TableCell align="center"><b>Discount</b></TableCell>
+              <TableCell align="center"><b>Type</b></TableCell>
+              <TableCell align="center"><b>Add</b></TableCell>
+              <TableCell align="center"><b>Quantity</b></TableCell>
+              <TableCell align="center"><b>Reduce</b></TableCell>
+              <TableCell align="center"><b>Delete</b></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -61,7 +61,7 @@ function ItemTable({
                 <TableCell>
                   <Button
                     variant="contained"
-                    color="default"
+                    color="secondary"
                     onClick={() => removeItems(row.id)}
                     disabled={row.qty === 0}
                   >
@@ -71,7 +71,7 @@ function ItemTable({
                 <TableCell>
                   <Button
                     variant="contained"
-                    color="secondary"
+                    color="primary"
                     onClick={() => removeWholeItem(row.id)}
                   >
                     Delete
@@ -84,7 +84,7 @@ function ItemTable({
       </TableContainer>
       <Button
         variant="contained"
-        color="primary"
+        color="secondary"
         style={{ margin: "12px 0" }}
         onClick={ResetTable}
       >

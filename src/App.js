@@ -6,7 +6,6 @@ import {
   Button,
   Dialog,
   DialogActions,
-  DialogContent,
   DialogTitle,
 } from "@material-ui/core";
 
@@ -266,11 +265,10 @@ function App() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">Item deleted !</DialogTitle>
-        <DialogContent></DialogContent>
+        <DialogTitle id="alert-dialog-title">Delete Item!</DialogTitle>
         <DialogActions>
           <Button onClick={handleClose} color="primary" autoFocus>
-            DELETED
+            <b>CONFIRM</b>
           </Button>
         </DialogActions>
       </Dialog>

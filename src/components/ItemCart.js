@@ -9,20 +9,20 @@ function ItemCart({ totalQty, totalPrice, discount }) {
     <div className="ItemCart">
       <Paper elevation={5} className="cart-container">
         <div className="content">
-          <p>Quantity :</p>
+          <p><b>Items      :  </b></p>
           <h5>{totalQty}</h5>
         </div>
         <div className="content">
-          <p>Total Price :</p>
+          <p><b>Total Price :</b></p>
           <h5>{totalPrice}</h5>
         </div>
         <div className="content">
-          <p>Discount :</p>
+          <p><b>Discount :</b></p>
           <h5>{-discount}</h5>
         </div>
         <div className="content" style={{ backgroundColor: "gainsboro" }}>
-          <p>Order Total :</p>
-          <h5>{totalPrice - discount}</h5>
+          <p><h1><b>Order Total :</b></h1></p>
+          <h1>{totalPrice - discount}</h1>
         </div>
       </Paper>
     </div>
